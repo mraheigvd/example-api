@@ -17,7 +17,7 @@ class ArticleTest extends TestCase
         $token = $user->generateToken();
         $headers = ['Authorization' => "Bearer $token"];
         $payload = [
-            'title' => 'Lorem',
+            //'title' => 'Lorem',
             'body' => 'Ipsum',
         ];
 

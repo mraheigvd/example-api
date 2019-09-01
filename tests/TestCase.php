@@ -10,6 +10,9 @@ abstract class TestCase extends BaseTestCase
 {
     use CreatesApplication, DatabaseMigrations;
 
+    /**
+     * @return void
+     */
     public function setUp()
     {
         parent::setUp();
