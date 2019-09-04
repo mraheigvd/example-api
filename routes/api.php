@@ -21,7 +21,7 @@ Route::post('login', 'Auth\LoginController@login');
 Route::post('logout', 'Auth\LoginController@logout');
 Route::post('register', 'Auth\RegisterController@register');
 
-Route::post('health', 'HealthController@index');
+Route::get('health', 'HealthController@index');
 
 Route::group(['middleware' => 'auth:api'], function() {
     Route::get('articles', 'ArticleController@index');
